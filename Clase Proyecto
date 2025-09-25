@@ -1,0 +1,68 @@
+package clases;
+import java.util.ArrayList;
+
+public class Proyecto {
+    private String nombreProyecto;
+    private String ubicacion;
+    private int totalDepartamentos;
+    private int precioBase;
+    private int vendidos; 
+    private ArrayList<Departamento> listaDepartamentos;
+
+    public Proyecto(String nombreProyecto, String ubicacion, int totalDepartamentos, int precioBase, int vendidos) {
+        this.nombreProyecto = nombreProyecto;
+        this.ubicacion = ubicacion;
+        this.totalDepartamentos = totalDepartamentos;
+        this.precioBase = precioBase;
+        this.vendidos = vendidos;
+        listaDepartamentos = new ArrayList<>();
+    }
+
+    public String getNombreProyecto() {
+        return nombreProyecto;
+    }
+
+    public void setNombreProyecto(String nombreProyecto) {
+        this.nombreProyecto = nombreProyecto;
+    }
+
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
+    }
+
+    public int getTotalDepartamentos() {
+        return totalDepartamentos;
+    }
+
+    public void setTotalDepartamentos(int totalDepartamentos) {
+        this.totalDepartamentos = totalDepartamentos;
+    }
+
+    public int getPrecioBase() {
+        return precioBase;
+    }
+
+    public void setPrecioBase(int precioBase) {
+        this.precioBase = precioBase;
+    }
+
+    public int getVendidos() {
+        return vendidos;
+    }
+
+    public void setVendidos(int vendidos) {
+        this.vendidos = vendidos;
+    }
+
+    public ArrayList<Departamento> getListaDepartamentos() {
+        return listaDepartamentos;
+    }
+
+    public void setListaDepartamentos(ArrayList<Departamento> listaDepartamentos) {
+        this.listaDepartamentos = listaDepartamentos;
+    }
+}
